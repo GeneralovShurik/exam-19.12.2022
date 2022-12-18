@@ -1,0 +1,68 @@
+
+/*Карточки с видео*/
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.card{
+    /*стили для карточки*/
+    
+    display: inline-block;
+    margin: 12px;
+    box-shadow: 0px 5px 10px 0px rgba(107, 104, 104, 0.5)
+
+}
+.card>img {
+    width: 95%;
+    height: 200px;
+    object-fit: cover;
+    margin: 5px;
+
+}
+.card > .name{
+    text-align: center;
+    margin: 5px;
+    /*TODO
+    красивости для названия видео*/
+}
+
+.card > .duration{
+   /* text-align: left;*/
+   margin: 5px;
+   text-decoration:overline;
+
+    /*TODO
+    красивости для продолжительности видео*/
+}
+/*Диологовое окно*/
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(61, 58, 58, 0.814);
+}
+.dialog {
+    position: absolute;
+    z-index: 99;
+    top: 15%;
+    bottom: 15%;
+    left: 15%;
+    right: 15%;
+    background: white;
+
+}
+.dialog>video {
+    height: 90%;
+    margin: 5px auto;
+    display: block;
+}
+/*.dialog>button{
+    color: red;
+}*/
+
+/*Красивости для диологового окна*/
+/*@media screen and (min-width/*)*/
