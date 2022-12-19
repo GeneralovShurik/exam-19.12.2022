@@ -72,8 +72,8 @@ loadVideos();
         const title = document.createElement('name');
         title.innerText = name;
         
-        const viewCount = document.createElement('viewCount');
-        viewCount.innerText = viewCount;
+        const viewCount = document.createElement('div');
+        viewCount.innerText = info.viewCount;
 
        // два див название из name и комент в innerText
 
